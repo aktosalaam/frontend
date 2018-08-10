@@ -72,4 +72,10 @@ public class CartDAOImpl implements CartDAO
 		return listCartItems;
 	}
 
+	@Override
+	public boolean addCart(CartItem cartItem) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }

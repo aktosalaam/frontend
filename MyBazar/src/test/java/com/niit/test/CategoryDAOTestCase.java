@@ -35,7 +35,7 @@ public class CategoryDAOTestCase
 	{
 		Category category=new Category();
 		
-		category.setCategoryName("iphone 7s");
+		category.setCategoryName("iphone X");
 		category.setCategoryDesc("iphones Mobiles");
 		
 		assertTrue("Problem in Adding Category:",categoryDAO.addCategory(category));
@@ -45,7 +45,7 @@ public class CategoryDAOTestCase
 	@Test
 	public void updateCategoryTest()
 	{
-		Category category=categoryDAO.getCategory(3);
+		Category category=categoryDAO.getCategory(1);
 		category.setCategoryName("Samsung");
 		category.setCategoryDesc("Samsung Smart Mobiles with 4G Feature");
 		
@@ -55,7 +55,7 @@ public class CategoryDAOTestCase
 	@Test 
 	public void deleteCategoryTest()
 	{
-		Category category=categoryDAO.getCategory(2);
+		Category category=categoryDAO.getCategory(3);
 		assertTrue("Problem in Deleting the Category",categoryDAO.deleteCategory(category));
 	}
 	

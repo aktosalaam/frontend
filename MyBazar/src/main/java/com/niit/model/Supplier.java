@@ -12,7 +12,6 @@ import javax.persistence.Table;
 public class Supplier implements Serializable 
 {
 	@Id
-	@GeneratedValue
 	private int supplierId;
 	private String supplierName;
 	private String supplierAddr;

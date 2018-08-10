@@ -29,7 +29,7 @@ public class CartDAOTestCase
 	{
 		CartItem cartItem=new CartItem();
 		
-		cartItem.setCartItemId(1);
+	    cartItem.setCartItemId(1);
 		cartItem.setProductId(12);
 		cartItem.setProductName("Engine Cylinder");
 		cartItem.setQuantity(10);
@@ -37,6 +37,6 @@ public class CartDAOTestCase
 		cartItem.setUsername("Pr");
 		cartItem.setPrice(7000);
 		
-		assertTrue("Creating CartItem",cartDAO.addToCart(cartItem));
+		assertEquals("Adding CartItem", true,cartDAO.addCart(cartItem));
 	}
 }

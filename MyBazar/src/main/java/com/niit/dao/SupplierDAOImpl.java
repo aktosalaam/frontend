@@ -30,13 +30,15 @@ public class SupplierDAOImpl implements SupplierDAO {
 	public boolean addSupplier(Supplier supplier) {
 		Session session = sessionFactory.openSession();
 
-		try {
-			session.saveOrUpdate(supplier);
+		try
+		{
+			sessionFactory.getCurrentSession().save(supplier);
 			return true;
-		} catch (Exception e) {
-			e.printStackTrace();
+		}
+		catch(Exception e)
+		{
 			return false;
-		} finally {
+		}finally {
 
 			session.close();
 		}
@@ -50,11 +52,13 @@ public class SupplierDAOImpl implements SupplierDAO {
 	public boolean updateSupplier(Supplier supplier) {
 		Session session = sessionFactory.openSession();
 
-		try {
-			session.update(supplier);
+		try
+		{
+			sessionFactory.getCurrentSession().update(supplier);
 			return true;
-		} catch (Exception e) {
-			e.printStackTrace();
+		}
+		catch(Exception e)
+		{
 			return false;
 		} finally {
 
@@ -108,4 +112,10 @@ public class SupplierDAOImpl implements SupplierDAO {
 
 	}
 
+	/*@Override
+	public boolean deleteSupplier(Supplier supplier) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+*/
 }

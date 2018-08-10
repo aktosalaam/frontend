@@ -30,9 +30,9 @@ public class SupplierDAOTestCase {
 	@Test
 	public void testAddSupplier() {
 		Supplier supplier = new Supplier();
-		supplier.getSupplierId();
-		supplier.setSupplierName("Atif");
-		supplier.setSupplierAddr("kolkatta");
+		supplier.setSupplierId(5);
+		supplier.setSupplierName("Altamash");
+		supplier.setSupplierAddr("Niit");
 		assertEquals("Successfully added a supplier details into the table", true, supplierDao.addSupplier(supplier));
 	}
 	
@@ -54,15 +54,15 @@ public class SupplierDAOTestCase {
 		assertEquals("Successfully updated a supplier details from the table", true,
 				supplierDao.updateSupplier(supplier));
 	}
-	//@Ignore
+	@Ignore
 	@Test
 	public void testDeleteSupplier() {
 		Supplier supplier = new Supplier();
-		//supplier = supplierDao.getSupplier(1);
+		supplier = supplierDao.getSupplier(5);
 		assertEquals("Successfully deleted supplier details from the table", true,
-				supplierDao.deleteSupplier(1));
+				supplierDao.deleteSupplier(5));
 	}
-	@Ignore
+	//@Ignore
 	@Test
 	public void testGetAllSupplier() {
 		Supplier supplier = new Supplier();
