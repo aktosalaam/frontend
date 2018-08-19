@@ -29,7 +29,7 @@ public class CategoryDAOTestCase
 		categoryDAO=(CategoryDAO)context.getBean("categoryDAO");
 	}
 	
-	//@Ignore
+	@Ignore
 	@Test
 	public void addCategoryTest()
 	{
@@ -41,11 +41,11 @@ public class CategoryDAOTestCase
 		assertTrue("Problem in Adding Category:",categoryDAO.addCategory(category));
 	}
 	
-	@Ignore
+	//@Ignores
 	@Test
 	public void updateCategoryTest()
 	{
-		Category category=categoryDAO.getCategory(1);
+		Category category=categoryDAO.getCategory(2);
 		category.setCategoryName("Samsung");
 		category.setCategoryDesc("Samsung Smart Mobiles with 4G Feature");
 		

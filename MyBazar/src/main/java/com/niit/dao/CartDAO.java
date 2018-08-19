@@ -1,4 +1,4 @@
-package com.niit.dao;
+/*package com.niit.dao;
 
 import java.util.List;
 
@@ -12,3 +12,4 @@ public interface CartDAO
 	public CartItem getCartItem(int cartItemId);
 	public List<CartItem> listCartItems(String username);
 }
+*/

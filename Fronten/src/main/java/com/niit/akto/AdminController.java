@@ -1,4 +1,4 @@
-package com.akto;
+package com.niit.akto;
 
 
 
@@ -19,7 +19,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.niit.dao.CategoryDAO;
 import com.niit.dao.ProductDAO;
-import com.niit.model.CartItem;
+//import com.niit.model.CartItem;
 import com.niit.model.Category;
 import com.niit.model.Product;
 

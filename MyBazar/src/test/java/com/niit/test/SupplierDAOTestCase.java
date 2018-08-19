@@ -26,7 +26,7 @@ public class SupplierDAOTestCase {
 		supplierDao = (SupplierDAO) context.getBean("supplierDAO");
 	}
 
-	@Ignore
+	// @Ignore
 	@Test
 	public void testAddSupplier() {
 		Supplier supplier = new Supplier();
@@ -35,7 +35,7 @@ public class SupplierDAOTestCase {
 		supplier.setSupplierAddr("Niit");
 		assertEquals("Successfully added a supplier details into the table", true, supplierDao.addSupplier(supplier));
 	}
-	
+
 	@Ignore
 	@Test
 	public void testGetSupplier() {
@@ -48,26 +48,28 @@ public class SupplierDAOTestCase {
 	@Test
 	public void testUpdateSupplier() {
 		Supplier supplier = new Supplier();
-		supplier = supplierDao.getSupplier(1);
-		supplier.setSupplierName("xyz");
-		supplier.setSupplierAddr("abc");
+		supplier = supplierDao.getSupplier(5);
+		supplier.setSupplierName("amit");
+		supplier.setSupplierAddr("bihar");
 		assertEquals("Successfully updated a supplier details from the table", true,
 				supplierDao.updateSupplier(supplier));
 	}
+
 	@Ignore
 	@Test
 	public void testDeleteSupplier() {
 		Supplier supplier = new Supplier();
 		supplier = supplierDao.getSupplier(5);
-		assertEquals("Successfully deleted supplier details from the table", true,
-				supplierDao.deleteSupplier(5));
+		assertEquals("Successfully deleted supplier details from the table", true, supplierDao.deleteSupplier(5));
 	}
-	//@Ignore
+
+	@Ignore
 	@Test
 	public void testGetAllSupplier() {
 		Supplier supplier = new Supplier();
 		supplier = supplierDao.getSupplier(1);
-		
-		assertEquals("Successfully fetched all supplier details from the table", 3, supplierDao.getSupplier(supplier.getSupplierId()));
+
+		assertEquals("Successfully fetched all supplier details from the table", 3,
+				supplierDao.getSupplier(supplier.getSupplierId()));
 	}
 }

@@ -39,7 +39,7 @@
 				</ol>
 				<div class="carousel-inner" role="listbox">
 					<div class="carousel-item active">
-						<img class="img" src="resources/images/piston.jpeg"
+						<img class="img" src="/Fronten/src/main/webapp/assets/images/images1.jpg"
 							alt="First slide">
 					</div>
 					<div class="carousel-item">

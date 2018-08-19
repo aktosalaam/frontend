@@ -1,4 +1,4 @@
-package com.akto;
+package com.niit.akto;
 
 import java.util.Collection;
 

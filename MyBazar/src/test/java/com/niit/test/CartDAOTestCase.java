@@ -1,4 +1,4 @@
-package com.niit.test;
+/*package com.niit.test;
 
 import static org.junit.Assert.*;
 
@@ -30,8 +30,8 @@ public class CartDAOTestCase
 		CartItem cartItem=new CartItem();
 		
 	    cartItem.setCartItemId(1);
-		cartItem.setProductId(12);
-		cartItem.setProductName("Engine Cylinder");
+		cartItem.setProductId(1);
+		cartItem.setProductName("Samsung J7");
 		cartItem.setQuantity(10);
 		cartItem.setStatus("NP");
 		cartItem.setUsername("Pr");
@@ -40,3 +40,4 @@ public class CartDAOTestCase
 		assertEquals("Adding CartItem", true,cartDAO.addCart(cartItem));
 	}
 }
+*/

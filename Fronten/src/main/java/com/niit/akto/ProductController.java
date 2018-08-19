@@ -1,4 +1,4 @@
-package com.akto;
+package com.niit.akto;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -52,7 +52,7 @@ public class ProductController
 		
 		/*Image Insertion*/ 
 		
-		String path="D:\\NIIT\\WorKspace\\EngineZoneFront\\src\\main\\webapp\\resources\\images\\";
+		String path="C:\\Users\\mruser\\git\\frontend\\Fronten\\src\\main\\webapp\\assets\\images";
 		path=path+String.valueOf(product.getProductId())+".jpg";
 		File filepath=new File(path);
 		

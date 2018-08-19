@@ -1,4 +1,4 @@
-package com.niit.model;
+/*package com.niit.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -84,3 +84,4 @@ public class CartItem {
 	}
 
 }
+*/

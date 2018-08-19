@@ -1,4 +1,5 @@
-package com.akto;
+package com.niit.akto;
+/*package com.akto;
 
 
 import java.util.List;
@@ -11,9 +12,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.niit.dao.CartDAO;
+//import com.niit.dao.CartDAO;
 import com.niit.dao.OrderDeatilDAO;
-import com.niit.model.CartItem;
+//import com.niit.model.CartItem;
 import com.niit.model.OrderDetail;
 import com.niit.model.User;
 
@@ -83,4 +84,4 @@ public class PaymentController
 		return totalCost;
 	}
 	
-}
+}*/
